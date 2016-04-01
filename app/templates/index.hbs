@@ -1,1 +1,12 @@
-{{outlet}}
+<h1> Welcome to the Questions/Answers Board </h1>
+
+You got questions? We (hopefully) have answers!
+
+<ul>
+  {{#each model as |question|}}
+     <li>Question: {{question.questionTitle}}</li>
+     <li>Submitted by: {{question.questionAuthor}}</li>
+     <li>Content: {{question.questionContent}}</li>
+     <li>Answer: {{question.answer}}</li>
+  {{/each}}
+</ul>
