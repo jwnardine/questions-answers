@@ -1,11 +1,12 @@
 import Ember from 'ember';
 
-  <li>Question: {{question.questionTitle}}</li>
-  <li>Submitted by: {{question.questionAuthor}}</li>
-  <li>Content: {{question.questionContent}}</li>
-  <li>Answer: {{question.answer}}</li>
-  <hr>
-  
 export default Ember.Component.extend({
+  actions: {
+    delete(question) {
+      if (confirm('Are you sure you want to delete this question?')) {
+        this.sendAction('destroyQuestion', question);
+      }
+    }
+  }
 
 });

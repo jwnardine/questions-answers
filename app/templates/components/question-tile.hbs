@@ -1,1 +1,7 @@
-{{yield}}
+
+  <li>Question: {{question.questionTitle}}</li>
+  <li>Submitted by: {{question.questionAuthor}}</li>
+  <li>Content: {{question.questionContent}}</li>
+  <li>Answer: {{question.answer}}</li>
+  <li><button {{action 'delete' rental}}>Delete</button></li>
+  <hr>
