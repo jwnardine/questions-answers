@@ -6,6 +6,12 @@ import Ember from 'ember';
     },
 
     actions: {
+      save3(params) {
+        var newQuestion = this.store.createRecord('question', params);
+        newQuestion.save();
+        this.transtionTo('index');
+      },
+
       destroyQuestion(question) {
         question.destroyRecord();
         this.transitionTo('index');
