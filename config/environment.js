@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'questions-answers',
     environment: environment,
+    firebase: 'https://blazing-heat-892.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
