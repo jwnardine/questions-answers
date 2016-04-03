@@ -1,3 +1,10 @@
 body {
-background-color: cyan;
+background-color: #c6ffb3;
+}
+header {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/a3/3c/48/a33c48c4840a75644b44b2f603c951e0.jpg");
+}
+#headerFont {
+  color: white;
+  font-size: 80px;
 }

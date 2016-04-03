@@ -1,3 +1,13 @@
-<h2 id="title">Welcome to Ember</h2>
+<header class = "jumbotron">
+  <h1 id="headerFont">QUESTIONS AND ANSWERS</h1>
+</header>
 
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>
+
+<hr>
+
+<footer>
+  {{#link-to 'index'}}<h3>Questions list</h3>{{/link-to}}
+</footer>
