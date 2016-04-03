@@ -1,1 +1,10 @@
-<h2>{{model.questionAuthor}}'s question "{{model.questionTitle}}"</h2>
+<h1>"{{model.questionTitle}}"</h1>
+<h3>By: {{model.questionAuthor}}</h3>
+<p>{{model.questionContent}}</p>
+
+
+
+{{question-detail question=model destroyQuestion="destroyQuestion"}}
+{{update-question question=model update="update"}}
+<br>
+{{#link-to 'index'}}Questions List{{/link-to}}
