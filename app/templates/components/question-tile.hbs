@@ -1,5 +1,7 @@
 {{#link-to 'question' question.id}}
   <h3>{{computedContentAuthor}}</h3>
   <p>Priority Level: {{question-priority question}}</p>
-  <hr>
 {{/link-to}}
+<button {{action "addToFavorites" question}}>Add to favorite questions</button>
+<br>
+<hr>
