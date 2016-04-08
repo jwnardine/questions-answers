@@ -8,3 +8,12 @@ header {
   color: white;
   font-size: 80px;
 }
+#highPriority {
+  color: red;
+}
+#mediumPriority {
+  color: orange;
+}
+#lowPriority {
+  color: green;
+}

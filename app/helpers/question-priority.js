@@ -4,11 +4,11 @@ export function questionPriority(params/*, hash*/) {
   var questionPriority = params[0].get('priority');
 
   if (questionPriority >= 7){
-    return "high";
+    return "HIGH";
   } else if (questionPriority >= 4){
-    return "medium";
+    return "MEDIUM";
   } else if (questionPriority >= 0){
-    return "low";
+    return "LOW";
   }
 }
 
