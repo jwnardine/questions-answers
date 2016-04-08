@@ -1,5 +1,5 @@
 {{#link-to 'question' question.id}}
-  <li>Question: {{question.questionTitle}}</li>
-  <p>By: {{question.questionAuthor}}</p>
+  <h3>{{computedContentAuthor}}</h3>
+  <p>Priority Level: {{question-priority question}}</p>
   <hr>
 {{/link-to}}

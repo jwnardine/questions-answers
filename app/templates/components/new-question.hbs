@@ -21,7 +21,12 @@
           <label for="answer">Answer</label>
           {{input value=answer id="answer"}}
         </div>
-        
+
+        <div class="form-group">
+          <label for="priority">Priority Level</label>
+          {{input value=priority id="priority" type="number" min="0" max="10"}}
+        </div>
+
         <button {{action 'save1'}}>Save</button>
       </form>
     </div>

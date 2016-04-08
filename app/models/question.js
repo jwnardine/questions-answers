@@ -4,5 +4,6 @@ export default DS.Model.extend({
   questionTitle: DS.attr(),
   questionAuthor: DS.attr(),
   questionContent: DS.attr(),
-  answer: DS.attr()
+  answer: DS.attr(),
+  priority: DS.attr('number')
 });

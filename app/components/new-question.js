@@ -13,6 +13,7 @@ export default Ember.Component.extend({
         questionAuthor: this.get('questionAuthor'),
         questionContent: this.get('questionContent'),
         answer: this.get('answer'),
+        priority: this.get('priority'),
       };
       this.set('addNewQuestion', false);
       this.sendAction('save2', params);
