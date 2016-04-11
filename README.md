@@ -1,7 +1,6 @@
 # Questions-answers
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project will test Jon's ability to implement multiple Ember features, including computed properties, services, and helpers. The user will be able to create a new question, answer an existing question, add a question to a favorite questions list, and rate a question's priority level.
 
 ## Prerequisites
 
