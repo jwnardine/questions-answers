@@ -4,6 +4,6 @@ export default DS.Model.extend({
   questionTitle: DS.attr(),
   questionAuthor: DS.attr(),
   questionContent: DS.attr(),
-  answer: DS.attr(),
+  answers: DS.attr.hasMany('answer', { async: true }),
   priority: DS.attr('number')
 });
