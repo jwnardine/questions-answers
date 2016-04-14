@@ -18,7 +18,7 @@
         </div>
 
         <div class="form-group">
-          <label for="priority">Priority Level</label>
+          <label for="priority">Priority Level (scale of 1-10)</label>
           {{input value=priority id="priority" placeholder=question.priority type="number" min="0" max="10"}}
         </div>
 
@@ -26,5 +26,5 @@
       </form>
     </div>
 {{else}}
-    <button {{action 'updateQuestionForm'}}>Update</button>
+    <button {{action 'updateQuestionForm'}}>Update this question</button>
 {{/if}}

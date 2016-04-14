@@ -2,9 +2,10 @@
 <h3>By: {{model.questionAuthor}}</h3>
 <p>{{model.questionContent}}</p>
 <p>Priority Level (0-10 scale): {{model.priority}}</p>
+<hr>
 
-{{update-question question=model update="update"}}
-<button class="btn btn-danger" {{action 'destroyQuestion' model}}>Delete</button>
+<h3>Available Answers:</h3>
+<br>
 
 <ul>
   {{#each model.answers as |answer|}}
@@ -13,3 +14,6 @@
 </ul>
 
 {{new-answer question=model save2="save3"}}
+<hr>
+{{update-question question=model update="update"}}
+<button class="btn btn-danger" {{action 'destroyQuestion' model}}>Delete this question</button>
