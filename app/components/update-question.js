@@ -11,7 +11,6 @@ export default Ember.Component.extend({
         questionTitle: this.get('questionTitle'),
         questionAuthor: this.get('questionAuthor'),
         questionContent: this.get('questionContent'),
-        answer: this.get('answer'),
         priority: this.get('priority'),
       };
       this.set('updateQuestionForm', false);
