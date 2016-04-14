@@ -3,8 +3,13 @@
 <p>{{model.questionContent}}</p>
 <p>Priority Level (0-10 scale): {{model.priority}}</p>
 
-
-
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
 {{update-question question=model update="update"}}
-<br>
+<button class="btn btn-danger" {{action 'destroyQuestion' model}}>Delete</button>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
+{{new-answer question=model save2="save3"}}
